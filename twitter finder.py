@@ -17,7 +17,7 @@ api = tweepy.API(auth)
 username = input("Enter the username of the account to analyze: ")
 
 # Get the user's followers
-followers = api.followers(username)
+followers = api.get_followers(username)
 
 # Loop through the followers and exclude those without profile pictures
 # and those with accounts created between 2012 and 2016
